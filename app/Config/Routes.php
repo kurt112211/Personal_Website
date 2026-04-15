@@ -9,3 +9,4 @@ $routes->get('/', 'Home::index');
 $routes->group('api', ['namespace' => 'App\Controllers\Api'], function($routes) {
     $routes->get('test', 'ApiController::index');
 });
+$routes->get('api/test', '\App\Controllers\Api\ApiController::index');
